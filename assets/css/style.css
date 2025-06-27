@@ -120,7 +120,7 @@ a {
   font-size: 1.8rem;
   line-height: 1.5;
   letter-spacing: 0.01em;
-  color: #687690;/* #687690 is a shade of blue-gray */
+  color: #687690;
 }
 
 .hero-wrap .title {
@@ -392,7 +392,6 @@ a {
   width: 50%;
 }
 
-
 .stats .img-block {
   position: relative;
 }
@@ -401,58 +400,70 @@ a {
   padding: 79px 0 0 165px;
 }
 
-.stats .stats-trend{
+.stats-trend {
   position: absolute;
   top: 0;
   left: 0;
   width: 239px;
   padding: 45px 22px 40px;
   border-radius: 0px 0px 12px 12px;
-  background: #fff;
+  background-color: #fff;
 }
-.stats .icon{
+
+.stats-trend .value {
+  font-weight: 700;
+  font-size: 2.6rem;
+  letter-spacing: 0.01em;
+  color: #000339;
+}
+
+.stats-trend .icon {
   margin-left: auto;
 }
-.stats .desc{
+
+.stats-trend .desc {
   margin-top: 8px;
-  color: #A7A7A7;
-  font-size: 1.2rem;
   font-weight: 400;
-  line-height: 1.5; /* 150% */
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #a7a7a7;
 }
-.stats .value{
-  color: #000339;
-  font-size: 2.6rem;
-  font-weight: 700;
-  line-height: 1; /* 100% */
-  letter-spacing: 0.26px;
-}
-.stats .separate{
+
+.stats-trend .separate {
   height: 1.2px;
   margin-top: 25px;
-  background: #E9E9E9;
+  background: #e9e9e9;
 }
-.stats .avatar-block{
+
+.stats .avatar-block {
   display: flex;
   flex-wrap: wrap;
   gap: 16px 14px;
   margin-top: 26px;
 }
-.stats .avatar-group{
+
+.stats .avatar-group {
   display: flex;
 }
-.stats .avatar{
+
+.stats .avatar {
   width: 16px;
   height: 16px;
   margin-left: -3px;
   object-fit: cover;
   border-radius: 50%;
+  background: var(--bg-color, #fff);
+  font-weight: 450;
+  font-size: 0.7rem;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
 }
 
 .stats .avatar:first-child {
   margin-left: 0;
 }
-
 
 .stats .img-block .image {
   display: block;
@@ -493,22 +504,25 @@ a {
   color: #5a6473;
 }
 
-.stats .row-qty{
+.stats .row-qty {
+  justify-content: space-between;
   margin-top: 110px;
   padding: 0 32px;
-  justify-content: space-between;
 }
-.stats .qty{
-  color: #000;
-  font-size: 6.4rem;
+
+.stats .qty {
   font-weight: 600;
+  font-size: 6.4rem;
+  color: #000000;
 }
-.stats .qty-desc{
+
+.stats .qty-desc {
   margin-top: 24px;
-  color: #7B8087;
-  font-size: 1.8rem;
   font-weight: 500;
+  font-size: 1.8rem;
+  color: #7b8087;
 }
+
 /* Subscription */
 .subscription {
   margin-top: 90px;
