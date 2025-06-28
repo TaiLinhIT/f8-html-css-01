@@ -649,3 +649,84 @@ a {
   font-size: 1.4rem;
   color: #c2c2c2;
 }
+/* Responsive Design */
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Media query for tablets and larger screens (768px and below) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .hero-wrap {
+        flex-direction: column;
+    }
+    .navbar {
+        font-size: 14px;
+    }
+    .navbar ul {
+        display: block;
+    }
+    .hero-wrap .title {
+        font-size: 24px;
+    }
+    .hero-wrap .desc {
+        font-size: 14px;
+    }
+}
+
+/* Media query for mobile screens (480px and below) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    .navbar {
+        display: block;
+    }
+    .hero-wrap {
+        padding: 10px;
+    }
+    .hero-wrap .title {
+        font-size: 18px;
+    }
+    .hero-wrap .desc {
+        font-size: 12px;
+    }
+    .features .list {
+        grid-template-columns: 1fr;
+    }
+    .hero-wrap .desc {
+        font-size: 14px;
+    }
+    .stats .value {
+        font-size: 18px;
+    }
+}
+
+/* Adjusting images to be responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* For Grid Layout */
+.features .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .features .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .features .list {
+        grid-template-columns: 1fr;
+    }
+}
